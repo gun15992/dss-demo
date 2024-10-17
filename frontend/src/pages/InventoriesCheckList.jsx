@@ -10,7 +10,7 @@ import { Container, Card, Row, Col, Pagination, Table, Tab, Tabs, Button, Modal,
 
 // Import Assets
 import '@assets/css/global.css';
-import '@assets/css/pages/inventoriesCheckList.css';
+import '@assets/css/pages/InventoriesCheckList.css';
 
 // Import Components
 import Loader from '@components/loader/Loader';
@@ -20,9 +20,9 @@ import { Searchbox } from '@components/searchbox/Searchbox';
 import { BlueOutlineButton, GrayOutlineButton, DarkOutlineButton, YellowOutlineButton, RedOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Features
-import InventoriesCheckListDataTable from '@features/inventoriesCheckList/InventoriesCheckListDataTable';
-import InventoriesCheckListDetailModal from '@features/inventoriesCheckList/InventoriesCheckListDetailModal';
-import InventoriesCheckListAdvancedSearchDropdown from '@features/inventoriesCheckList/InventoriesCheckListAdvancedSearchDropdown';
+import InventoriesCheckListDataTable from '@features/InventoriesCheckList/InventoriesCheckListDataTable';
+import InventoriesCheckListDetailModal from '@features/InventoriesCheckList/InventoriesCheckListDetailModal';
+import InventoriesCheckListAdvancedSearchDropdown from '@features/InventoriesCheckList/InventoriesCheckListAdvancedSearchDropdown';
 
 // Import Utilities
 import { getApiUrl, getPublicUrl } from '@utils/getUrl';

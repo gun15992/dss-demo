@@ -6,7 +6,7 @@ import { Modal } from 'react-bootstrap';
 
 // Import Assets
 import '@assets/css/global.css';
-import '@assets/css/features/inventoriesCheckList/InventoriesCheckListDataTable.css'
+import '@assets/css/features/InventoriesCheckList/InventoriesCheckListDataTable.css'
 
 // Import Components
 import { GreenPillBadge, RedPillBadge, YellowPillBadge, GrayPillBadge } from '@components/badges/PillBadges';
