@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 // Import Assets
-import '../../assets/css/features/inventoriesCheckList/InventoriesCheckListAdvancedSearchDropdown.css';
+import '@assets/css/features/inventoriesCheckList/InventoriesCheckListAdvancedSearchDropdown.css';
 
 // Import Components
-import { DarkOutlineButton, RedOutlineButton } from '../../components/buttons/OutlineButton';
+import { DarkOutlineButton, RedOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Icons
 import { IoClose } from "react-icons/io5";

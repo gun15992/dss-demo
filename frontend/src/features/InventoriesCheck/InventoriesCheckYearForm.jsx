@@ -3,7 +3,7 @@ import React from 'react';
 import { Form } from 'react-bootstrap';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckYearForm.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckYearForm.css';
 
 function InventoriesCheckYearForm({ selectedYear, onSelectYear }) {
     const currentYear = new Date().getFullYear();

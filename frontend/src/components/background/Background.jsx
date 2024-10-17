@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import Assets
-import '../../assets/css/components/background/Background.css';
+import '@assets/css/components/background/Background.css';
 
 // Import Utilities
 import { getPublicUrl } from '../../utils/getUrl';

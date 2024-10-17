@@ -4,16 +4,16 @@ import { Container } from 'react-bootstrap';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 // Import Assets
-import '../assets/css/global.css';
-import '../assets/css/pages/Home.css';
+import '@assets/css/global.css';
+import '@assets/css/pages/Home.css';
 
 // Import Components
-import Layout from '../components/layouts/Layout';
-import { ModernBackground } from '../components/background/Background';
-import { DarkOutlineButton } from '../components/buttons/OutlineButton';
+import Layout from '@components/layouts/Layout';
+import { ModernBackground } from '@components/background/Background';
+import { DarkOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Utilities
-import { getPublicUrl } from '../utils/getUrl';
+import { getPublicUrl } from '@utils/getUrl';
 
 // Import Icons
 import { IoArrowForwardCircleOutline } from "react-icons/io5";

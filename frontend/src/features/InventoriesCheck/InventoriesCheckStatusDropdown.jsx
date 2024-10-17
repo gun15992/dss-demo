@@ -3,7 +3,7 @@ import React from 'react';
 import Select from 'react-select';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckStatusDropdown.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckStatusDropdown.css';
 
 function InventoriesCheckStatusDropdown({ selectedStatus, onSelectedStatus }) {
     const statusOptions = [

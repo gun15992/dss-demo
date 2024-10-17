@@ -4,11 +4,11 @@ import QRCode from 'qrcode.react';
 import { Modal, Button, Row, Col, Card } from 'react-bootstrap';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheckList/InventoriesCheckListDetailModal.css';
+import '@assets/css/features/InventoriesCheckList/InventoriesCheckListDetailModal.css';
 
 // Import Components
-import { GrayOutlineButton } from '../../components/buttons/OutlineButton';
-import { GreenPillBadge, RedPillBadge, YellowPillBadge, GrayPillBadge } from '../../components/badges/PillBadges';
+import { GrayOutlineButton } from '@components/buttons/OutlineButton';
+import { GreenPillBadge, RedPillBadge, YellowPillBadge, GrayPillBadge } from '@components/badges/PillBadges';
 
 // Import Icons
 import { IoClose } from "react-icons/io5";

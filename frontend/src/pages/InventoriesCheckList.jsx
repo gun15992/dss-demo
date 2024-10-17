@@ -9,23 +9,23 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Container, Card, Row, Col, Pagination, Table, Tab, Tabs, Button, Modal, Dropdown } from 'react-bootstrap';
 
 // Import Assets
-import '../assets/css/global.css';
-import '../assets/css/pages/inventoriesCheckList.css';
+import '@assets/css/global.css';
+import '@assets/css/pages/inventoriesCheckList.css';
 
 // Import Components
-import Loader from '../components/loader/Loader';
-import Layout from '../components/layouts/Layout';
-import { DataCount } from '../components/datacount/DataCount';
-import { Searchbox } from '../components/searchbox/Searchbox';
-import { BlueOutlineButton, GrayOutlineButton, DarkOutlineButton, YellowOutlineButton, RedOutlineButton } from '../components/buttons/OutlineButton';
+import Loader from '@components/loader/Loader';
+import Layout from '@components/layouts/Layout';
+import { DataCount } from '@components/datacount/DataCount';
+import { Searchbox } from '@components/searchbox/Searchbox';
+import { BlueOutlineButton, GrayOutlineButton, DarkOutlineButton, YellowOutlineButton, RedOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Features
-import InventoriesCheckListDataTable from '../features/inventoriesCheckList/InventoriesCheckListDataTable';
-import InventoriesCheckListDetailModal from '../features/inventoriesCheckList/InventoriesCheckListDetailModal';
-import InventoriesCheckListAdvancedSearchDropdown from '../features/inventoriesCheckList/InventoriesCheckListAdvancedSearchDropdown';
+import InventoriesCheckListDataTable from '@features/inventoriesCheckList/InventoriesCheckListDataTable';
+import InventoriesCheckListDetailModal from '@features/inventoriesCheckList/InventoriesCheckListDetailModal';
+import InventoriesCheckListAdvancedSearchDropdown from '@features/inventoriesCheckList/InventoriesCheckListAdvancedSearchDropdown';
 
 // Import Utilities
-import { getApiUrl, getPublicUrl } from '../utils/getUrl';
+import { getApiUrl, getPublicUrl } from '@utils/getUrl';
 
 // Import Icons
 import { IoClose } from "react-icons/io5";

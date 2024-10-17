@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckTabs.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckTabs.css';
 
 // Import Icons
 import { MdOutlineQrCodeScanner } from "react-icons/md";

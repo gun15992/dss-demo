@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import Assets
-import '../../assets/css/components/datacount/DataCount.css';
+import '@assets/css/components/datacount/DataCount.css';
 
 export const DataCount = ({ children, ...props }) => {
     return (

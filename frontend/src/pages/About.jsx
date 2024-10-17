@@ -5,14 +5,14 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Container, Card, Row, Col, Button, Form, Spinner } from 'react-bootstrap';
 
 // Import Assets
-import '../assets/css/global.css';
-import '../assets/css/pages/About.css';
+import '@assets/css/global.css';
+import '@assets/css/pages/About.css';
 
 // Import Components
-import Layout from '../components/layouts/Layout';
+import Layout from '@components/layouts/Layout';
 
 // Import Utilities
-import { getApiUrl, getPublicUrl } from '../utils/getUrl';
+import { getApiUrl, getPublicUrl } from '@utils/getUrl';
 
 // Import Icons
 import { MdInfoOutline } from 'react-icons/md';

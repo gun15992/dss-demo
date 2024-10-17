@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import Assets
-import '../../assets/css/components/layouts/Footer.css';
+import '@assets/css/components/layouts/Footer.css';
 
 function Footer() {
     return (

@@ -6,23 +6,23 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Container, Card, Row, Col, Button, Form, Dropdown } from 'react-bootstrap';
 
 // Import Assets
-import '../assets/css/global.css';
-import '../assets/css/pages/Dashboard.css';
+import '@assets/css/global.css';
+import '@assets/css/pages/Dashboard.css';
 
 // Import Components
-import Loader from '../components/loader/Loader';
-import Layout from '../components/layouts/Layout';
-import { GrayPillBadge } from '../components/badges/PillBadges';
-import { BlueOutlineButton } from '../components/buttons/OutlineButton';
+import Loader from '@components/loader/Loader';
+import Layout from '@components/layouts/Layout';
+import { GrayPillBadge } from '@components/badges/PillBadges';
+import { BlueOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Features
-import DashboardTabs from '../features/Dashboard/DashboardTabs';
-import DashboardYearDropdown from '../features/Dashboard/DashboardYearDropdown';
-import DashboardOrganizationDropdown from '../features/Dashboard/DashboardOrganizationDropdown';
-import DashBoardCheckOrganizationDropdown from '../features/Dashboard/DashBoardCheckOrganizationDropdown';
+import DashboardTabs from '@features/Dashboard/DashboardTabs';
+import DashboardYearDropdown from '@features/Dashboard/DashboardYearDropdown';
+import DashboardOrganizationDropdown from '@features/Dashboard/DashboardOrganizationDropdown';
+import DashBoardCheckOrganizationDropdown from '@features/Dashboard/DashBoardCheckOrganizationDropdown';
 
 // Import Utilities
-import { getApiUrl, getPublicUrl } from '../utils/getUrl';
+import { getApiUrl, getPublicUrl } from '@utils/getUrl';
 
 // Import Icons
 import { FaSpinner } from "react-icons/fa6";

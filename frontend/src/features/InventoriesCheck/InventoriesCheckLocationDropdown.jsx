@@ -3,7 +3,7 @@ import Select from 'react-select';
 import React, { useState } from 'react';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckLocationDropdown.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckLocationDropdown.css';
 
 function InventoriesCheckLocationDropdown({ locations, selectedLocation, onSelectLocation }) {
     const [selectedBuilding, setSelectedBuilding] = useState(selectedLocation.buildingCode || null);

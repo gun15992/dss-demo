@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { Form, Button, InputGroup } from 'react-bootstrap';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckQrCodeScanner.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckQrCodeScanner.css';
 
 // Import Icons
 import { IoQrCode } from "react-icons/io5";

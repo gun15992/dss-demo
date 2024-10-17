@@ -7,23 +7,23 @@ import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { Container, Card, Row, Col, Button, Form, Spinner, Alert } from 'react-bootstrap';
 
 // Import Assets
-import '../assets/css/global.css';
-import '../assets/css/pages/InventoriesCheck.css';
+import '@assets/css/global.css';
+import '@assets/css/pages/InventoriesCheck.css';
 
 // Import Components
-import Loader from '../components/loader/Loader';
-import Layout from '../components/layouts/Layout';
-import { GreenPillBadge, RedPillBadge, YellowPillBadge, GrayPillBadge } from '../components/badges/PillBadges';
-import { BlueOutlineButton, GreenOutlineButton, YellowOutlineButton } from '../components/buttons/OutlineButton';
+import Loader from '@components/loader/Loader';
+import Layout from '@components/layouts/Layout';
+import { GreenPillBadge, RedPillBadge, YellowPillBadge, GrayPillBadge } from '@components/badges/PillBadges';
+import { BlueOutlineButton, GreenOutlineButton, YellowOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Features
-import InventoriesCheckTabs from '../features/InventoriesCheck/InventoriesCheckTabs';
-import InventoriesCheckModal from '../features/InventoriesCheck/InventoriesCheckModal';
-import InventoriesCheckImageModal from '../features/InventoriesCheck/InventoriesCheckImageModal';
-import InventoriesCheckQrCodeScanner from '../features/InventoriesCheck/InventoriesCheckQrCodeScanner';
+import InventoriesCheckTabs from '@features/InventoriesCheck/InventoriesCheckTabs';
+import InventoriesCheckModal from '@features/InventoriesCheck/InventoriesCheckModal';
+import InventoriesCheckImageModal from '@features/InventoriesCheck/InventoriesCheckImageModal';
+import InventoriesCheckQrCodeScanner from '@features/InventoriesCheck/InventoriesCheckQrCodeScanner';
 
 // Import Utilities
-import { getApiUrl, getPublicUrl } from '../utils/getUrl';
+import { getApiUrl, getPublicUrl } from '@utils/getUrl';
 
 // Import Icons
 import { FiEdit3 } from 'react-icons/fi';

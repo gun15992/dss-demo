@@ -13,18 +13,18 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Container, Card, Row, Col, Form, Button, ButtonGroup, Pagination, Spinner } from 'react-bootstrap';
 
 // Import Assets
-import '../assets/css/global.css';
-import '../assets/css/pages/InventoriesQrCodeGenerator.css';
-import THSarabunNew from '../../src/assets/font/Sarabun-Bold.ttf';
+import '@assets/css/global.css';
+import '@assets/css/pages/InventoriesQrCodeGenerator.css';
+import THSarabunNew from '/src/assets/font/Sarabun-Bold.ttf';
 
 // Import Components
-import Loader from '../components/loader/Loader';
-import Layout from '../components/layouts/Layout';
-import { DataCount } from '../components/datacount/DataCount';
-import { BlueOutlineButton } from '../components/buttons/OutlineButton';
+import Loader from '@components/loader/Loader';
+import Layout from '@components/layouts/Layout';
+import { DataCount } from '@components/datacount/DataCount';
+import { BlueOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Utilities
-import { getApiUrl, getPublicUrl } from '../utils/getUrl';
+import { getApiUrl, getPublicUrl } from '@utils/getUrl';
 
 // Import Icons
 import { IoQrCode } from "react-icons/io5";

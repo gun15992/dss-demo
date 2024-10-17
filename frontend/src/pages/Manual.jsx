@@ -5,15 +5,15 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 
 // Import Assets
-import '../assets/css/global.css';
-import '../assets/css/pages/Manual.css';
+import '@assets/css/global.css';
+import '@assets/css/pages/Manual.css';
 
 // Import Components
-import Layout from '../components/layouts/Layout';
-import { BlueOutlineButton, GrayOutlineButton } from '../components/buttons/OutlineButton';
+import Layout from '@components/layouts/Layout';
+import { BlueOutlineButton, GrayOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Utilities
-import { getApiUrl, getPublicUrl, getPdfUrl } from '../utils/getUrl';
+import { getApiUrl, getPublicUrl, getPdfUrl } from '@utils/getUrl';
 
 // Import Icons
 import { FiDownload } from "react-icons/fi";

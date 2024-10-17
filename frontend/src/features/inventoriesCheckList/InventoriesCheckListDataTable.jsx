@@ -5,12 +5,12 @@ import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 
 // Import Assets
-import '../../assets/css/global.css';
-import '../../assets/css/features/inventoriesCheckList/InventoriesCheckListDataTable.css'
+import '@assets/css/global.css';
+import '@assets/css/features/inventoriesCheckList/InventoriesCheckListDataTable.css'
 
 // Import Components
-import { GreenPillBadge, RedPillBadge, YellowPillBadge, GrayPillBadge } from '../../components/badges/PillBadges';
-import { DarkOutlineButton, YellowOutlineButton, RedOutlineButton, GrayOutlineButton } from '../../components/buttons/OutlineButton';
+import { GreenPillBadge, RedPillBadge, YellowPillBadge, GrayPillBadge } from '@components/badges/PillBadges';
+import { DarkOutlineButton, YellowOutlineButton, RedOutlineButton, GrayOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Icons
 import { FiEdit3 } from 'react-icons/fi';

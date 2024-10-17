@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Import Assets
-import '../../assets/css/features/Dashboard/DashboardTabs.css';
+import '@assets/css/features/Dashboard/DashboardTabs.css';
 
 // Import Icons
 import { BsBox } from "react-icons/bs";

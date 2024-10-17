@@ -3,7 +3,7 @@ import React from 'react';
 import { Form } from 'react-bootstrap';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckRemarkForm.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckRemarkForm.css';
 
 function InventoriesCheckRemarkForm({ selectedRemark, onSelectRemark }) {
 

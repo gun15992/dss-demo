@@ -3,7 +3,7 @@ import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckYearDropdown.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckYearDropdown.css';
 
 function InventoriesCheckYearDropdown({ selectedYear, onSelectYear }) {
     const currentYear = new Date().getFullYear();

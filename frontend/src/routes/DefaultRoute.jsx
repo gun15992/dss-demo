@@ -3,15 +3,15 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import Pages
-import Home from '../pages/Home';
-import Manual from '../pages/Manual';
-// import About from '../pages/About';
-import Dashboard from '../pages/Dashboard';
-import Inventories from '../pages/Inventories';
-// import InventoriesType from '../pages/InventoriesType';
-import InventoriesCheck from '../pages/InventoriesCheck';
-import InventoriesCheckList from '../pages/InventoriesCheckList';
-import InventoriesQrCodeGenerator from '../pages/InventoriesQrCodeGenerator';
+import Home from '@pages/Home';
+import Manual from '@pages/Manual';
+// import About from '@pages/About';
+import Dashboard from '@pages/Dashboard';
+import Inventories from '@pages/Inventories';
+// import InventoriesType from '@pages/InventoriesType';
+import InventoriesCheck from '@pages/InventoriesCheck';
+import InventoriesCheckList from '@pages/InventoriesCheckList';
+import InventoriesQrCodeGenerator from '@pages/InventoriesQrCodeGenerator';
 
 function DefaultRoute() {
     return (

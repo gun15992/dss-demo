@@ -3,7 +3,7 @@ import Select from 'react-select';
 import React, { useState, useEffect } from 'react';
 
 // Import Assets
-import '../../assets/css/features/Dashboard/DashBoardCheckOrganizationDropdown.css';
+import '@assets/css/features/Dashboard/DashBoardCheckOrganizationDropdown.css';
 
 const orgOptions = [
     { value: [1767], label: 'ส่วนกลาง' },

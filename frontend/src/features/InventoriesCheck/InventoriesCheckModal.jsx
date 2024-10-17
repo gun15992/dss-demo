@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, Modal, Button } from 'react-bootstrap';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckModal.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckModal.css';
 
 // Import Components
 import { GreenOutlineButton, GrayOutlineButton } from '../../components/buttons/OutlineButton';

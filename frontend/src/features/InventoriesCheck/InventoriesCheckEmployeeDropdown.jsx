@@ -3,7 +3,7 @@ import Select from 'react-select';
 import React, { useState, useEffect } from 'react';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckEmployeeDropdown.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckEmployeeDropdown.css';
 
 function InventoriesCheckEmployeeDropdown({ employees, selectedEmployee, onSelectEmployee }) {
     const [selectedEmp, setSelectedEmp] = useState(selectedEmployee.empId || null);

@@ -3,7 +3,7 @@ import Select from 'react-select';
 import React, { useState } from 'react';
 
 // Import Assets
-import '../../assets/css/features/InventoriesCheck/InventoriesCheckOrganizationDropdown.css';
+import '@assets/css/features/InventoriesCheck/InventoriesCheckOrganizationDropdown.css';
 
 function InventoriesCheckOrganizationDropdown({ organizations, selectedOrganization, onSelectOrganization }) {
     const [selectedDivision, setSelectedDivision] = useState(null);

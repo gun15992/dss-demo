@@ -6,24 +6,24 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Container, Card, Row, Col, Pagination } from 'react-bootstrap';
 
 // Import Assets
-import '../assets/css/global.css';
-import '../assets/css/pages/Inventories.css';
+import '@assets/css/global.css';
+import '@assets/css/pages/Inventories.css';
 
 // Import Components
-import Loader from '../components/loader/Loader';
-import Layout from '../components/layouts/Layout';
-import { DataCount } from '../components/datacount/DataCount';
-import { Searchbox } from '../components/searchbox/Searchbox';
-import { BlueOutlineButton, GreenOutlineButton, DarkOutlineButton } from '../components/buttons/OutlineButton';
+import Loader from '@components/loader/Loader';
+import Layout from '@components/layouts/Layout';
+import { DataCount } from '@components/datacount/DataCount';
+import { Searchbox } from '@components/searchbox/Searchbox';
+import { BlueOutlineButton, GreenOutlineButton, DarkOutlineButton } from '@components/buttons/OutlineButton';
 
 // Import Features
-import InventoriesDataTable from '../features/Inventories/InventoriesDataTable';
-import InventoriesImageModal from '../features/Inventories/InventoriesImageModal';
-import InventoriesDetailModal from '../features/Inventories/InventoriesDetailModal';
-import InventoriesAdvancedSearchDropdown from '../features/Inventories/InventoriesAdvancedSearchDropdown';
+import InventoriesDataTable from '@features/Inventories/InventoriesDataTable';
+import InventoriesImageModal from '@features/Inventories/InventoriesImageModal';
+import InventoriesDetailModal from '@features/Inventories/InventoriesDetailModal';
+import InventoriesAdvancedSearchDropdown from '@features/Inventories/InventoriesAdvancedSearchDropdown';
 
 // Import Utilities
-import { getApiUrl, getPublicUrl } from '../utils/getUrl';
+import { getApiUrl, getPublicUrl } from '@utils/getUrl';
 
 // Import Icons
 import { FaSpinner } from "react-icons/fa6";
