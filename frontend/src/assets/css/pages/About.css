@@ -1,0 +1,38 @@
+/* Paragraph */
+.header-paragraph {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 63px;
+    text-decoration: underline;
+}
+.co-header-paragraph {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+    margin-left: 100px;    
+    margin-bottom: 5px;
+}
+
+.paragraph {
+    font-size: 18px;
+    margin-left: 63px;
+}
+li {
+    font-size: 15px;
+    margin-left:100px;
+}
+li::marker {
+    color: black;
+    font-size: 12px;
+}
+
+/* Paragraph Color */
+.paragraph-darkblue {
+    color: darkblue;
+}
+.paragraph-darkorange {
+    color: darkorange;
+}
+.paragraph-darkgray {
+    color: rgb(94, 94, 94);
+}

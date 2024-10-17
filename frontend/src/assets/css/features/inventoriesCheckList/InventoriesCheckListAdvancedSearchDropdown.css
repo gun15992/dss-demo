@@ -1,0 +1,15 @@
+/* Labels */
+.from-label-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 766.67px) {
+    .from-label-text {
+        justify-content: start;
+        margin-top: 0px;
+        margin-bottom: 0px; 
+    }
+}

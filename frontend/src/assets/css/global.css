@@ -1,0 +1,119 @@
+/* Navbar */
+.bg-dark {
+    /* background-color: rgba(0, 0, 0, 0.5) !important; */
+}
+
+/* Card */
+.main-card {
+    margin-top: 96px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+    padding: 4px;
+}
+.card-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0px;
+    cursor: default;
+}
+.card-title-hidden {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+h5, p {
+    cursor: default;
+}
+.advanced-search-card {
+    width: 100%;
+    margin-top: 1rem;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+.advanced-search-card-wrapper.closed .advanced-search-card {
+    opacity: 0;
+}
+.advanced-search-card-wrapper {
+    overflow: hidden;
+    width: 100%;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.advanced-search-card-wrapper.open {
+    max-height: 1000px;
+}
+
+.advanced-search-card-wrapper.closed {
+    max-height: 0;
+}
+.advanced-search-card-wrapper.closed .advanced-search-card {
+    opacity: 0;
+}
+.advanced-search-col {
+    width: 100%;
+}
+.advanced-search-tag {
+    cursor: default;
+}
+.advanced-search-options {
+    text-align: center;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.refresh-btn, .refresh-btn-icon {
+    margin: 4px;
+}
+.refresh-btn-spinner {
+    margin-right: 4px;
+}
+
+/* Text */
+@media (max-width: 1277.60px) {
+    .responsive-text-hidden {
+        display: none;        
+    }
+}
+.require-star {
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown-label {
+    margin-bottom: 5px;
+}
+.css-tj5bde-Svg {
+    cursor: pointer;
+}
+
+/* Icons */
+.advanced-search-icon {
+    margin-right: 10px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Table */
+.table-header {
+    cursor: pointer;
+}

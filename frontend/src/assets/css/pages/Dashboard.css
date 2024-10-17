@@ -1,0 +1,27 @@
+/* Inventory Dashboard */
+.inventory-dashboard {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+}
+.inventory-dashboard-icon {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.inventory-nametag {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.inventory-paragraph, 
+.inventory-type-paragraph {
+    margin-bottom: 0;
+}
+.text-truncate-custom {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

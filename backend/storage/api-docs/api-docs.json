@@ -1,0 +1,898 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "DSS Backend API",
+        "description": "KUSRC - DSS Backend API V0.0.3 (Update 18-09-2024 04:20AM)",
+        "version": "0.0.3"
+    },
+    "servers": [
+        {
+            "url": "http://172.16.130.54:8000"
+        }
+    ],
+    "paths": {
+        "/api/getInventories": {
+            "get": {
+                "tags": [
+                    "Inventories"
+                ],
+                "summary": "GET: Inventories Data with Pagination",
+                "operationId": "740e5561e8eccb7f1c26a905459ade62",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getInventories/{id}": {
+            "get": {
+                "tags": [
+                    "Inventories"
+                ],
+                "summary": "GET: Inventories Data by ID",
+                "operationId": "18f2af10e9724a33284b6804f7343222",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Inventory ID",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getAllInventories": {
+            "get": {
+                "tags": [
+                    "Inventories"
+                ],
+                "summary": "GET: All Inventories Data",
+                "operationId": "e956a71e666d28bc0d863bc38dd6b370",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getAllInventories/{id}": {
+            "get": {
+                "tags": [
+                    "Inventories"
+                ],
+                "summary": "GET: All Inventories Data by ID",
+                "operationId": "8caef8deee26b19cd7780ea2b380e773",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Inventory ID",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getQrCodeInventories": {
+            "get": {
+                "tags": [
+                    "Inventories"
+                ],
+                "summary": "GET: QR Code Inventories Data",
+                "operationId": "6aa8f9260b2c4132e7a20ab473e55996",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getCountInventories": {
+            "get": {
+                "tags": [
+                    "Inventories"
+                ],
+                "summary": "GET: Count All Inventories Data",
+                "operationId": "d7e903dc9c789a7585e26817f53108e2",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/putInventories/{id}": {
+            "put": {
+                "tags": [
+                    "Inventories"
+                ],
+                "summary": "PUT: Update Inventory Data by ID",
+                "operationId": "208c318d531d20254024e0bc74b38d38",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "check_fiscal_year": {
+                                        "type": "integer",
+                                        "example": 2567
+                                    },
+                                    "dispense_flg": {
+                                        "type": "char",
+                                        "example": "N"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "422": {
+                        "description": "Unprocessable Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getLocations": {
+            "get": {
+                "tags": [
+                    "Locations"
+                ],
+                "summary": "GET: All Locations Data",
+                "operationId": "c812fd8cfa4760b5868cc01a83ce2b65",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getMoveHistories": {
+            "get": {
+                "tags": [
+                    "Move Histories"
+                ],
+                "summary": "GET: Move Inventories Histories Data with Pagination",
+                "operationId": "0c02ba4c975098455ff562a61e8ae8ca",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getMoveHistories/{id}": {
+            "get": {
+                "tags": [
+                    "Move Histories"
+                ],
+                "summary": "GET: Move Inventories Histories Data by ID",
+                "operationId": "e90c2e9fe5ed8d39e2d8f2221f2111ea",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Move Inventory History ID",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getAllMoveHistories": {
+            "get": {
+                "tags": [
+                    "Move Histories"
+                ],
+                "summary": "GET: All Move Inventories Histories Data",
+                "operationId": "b9797fb4d354a2135314acae6b39c7cd",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getAllMoveHistories/{id}": {
+            "get": {
+                "tags": [
+                    "Move Histories"
+                ],
+                "summary": "GET: All Move Inventories Histories Data by ID",
+                "operationId": "66ff820ffcde61c57ebc3f74b9733182",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Move Inventory History ID",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/postMoveHistories": {
+            "post": {
+                "tags": [
+                    "Move Histories"
+                ],
+                "summary": "POST: Create Move Inventory History Data",
+                "operationId": "4671dde8f211ca1941565d1f0a388add",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "inv_id": {
+                                        "type": "number",
+                                        "example": 1
+                                    },
+                                    "detail": {
+                                        "type": "string",
+                                        "example": "ทดสอบ"
+                                    },
+                                    "building_id": {
+                                        "type": "number",
+                                        "example": 2
+                                    },
+                                    "floor": {
+                                        "type": "number",
+                                        "example": 4
+                                    },
+                                    "room_number": {
+                                        "type": "string",
+                                        "example": "ห้องอบรมคอมพิวเตอร์"
+                                    },
+                                    "sub_division_id": {
+                                        "type": "number",
+                                        "example": 1801
+                                    },
+                                    "owner_emp_id": {
+                                        "type": "number",
+                                        "example": 15404
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "409": {
+                        "description": "Conflict"
+                    },
+                    "422": {
+                        "description": "Unprocessable Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getReport": {
+            "get": {
+                "tags": [
+                    "Report"
+                ],
+                "summary": "GET: All Inventories Report Data",
+                "operationId": "c5980e3d08161fb3d639ae02358f225c",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getCheckHistories": {
+            "get": {
+                "tags": [
+                    "Check Histories"
+                ],
+                "summary": "GET: Check Inventories Histories Data with Pagination",
+                "operationId": "ab210f158f00d32619729a6c9ea0ec79",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getCheckHistories/{id}": {
+            "get": {
+                "tags": [
+                    "Check Histories"
+                ],
+                "summary": "GET: Check Inventories Histories Data by ID",
+                "operationId": "d638eb29c12a333eb1b82b339311efc2",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Check Inventory History ID",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getAllCheckHistories": {
+            "get": {
+                "tags": [
+                    "Check Histories"
+                ],
+                "summary": "GET: All Check Inventories Histories Data",
+                "operationId": "f409044c94b38a02735215d4f5c88d3b",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getAllCheckHistories/{id}": {
+            "get": {
+                "tags": [
+                    "Check Histories"
+                ],
+                "summary": "GET: All Check Inventories Histories Data by ID",
+                "operationId": "bff2d610352db5a8bf44c4fa964e5569",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Check Inventory History ID",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/postCheckHistories": {
+            "post": {
+                "tags": [
+                    "Check Histories"
+                ],
+                "summary": "POST: Create Check Inventory History Data",
+                "operationId": "9b536f463c08132648604c95d681f3d1",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "inv_id": {
+                                        "type": "number",
+                                        "example": 108381
+                                    },
+                                    "inv_sn": {
+                                        "type": "string",
+                                        "example": "วศ.คอ.7110-002-0001/16 2563"
+                                    },
+                                    "inv_name": {
+                                        "type": "string",
+                                        "example": "โต๊ะสำหรับวางคอมพิวเตอร์"
+                                    },
+                                    "fiscal_year": {
+                                        "type": "number",
+                                        "example": 2567
+                                    },
+                                    "dispense_flg": {
+                                        "type": "char",
+                                        "example": "N"
+                                    },
+                                    "building_code": {
+                                        "type": "number",
+                                        "example": 670300
+                                    },
+                                    "building_name": {
+                                        "type": "string",
+                                        "example": "อาคารห้องปฏิบัติการเฉพาะทาง (SAL)"
+                                    },
+                                    "floor_code": {
+                                        "type": "number",
+                                        "example": 670301
+                                    },
+                                    "floor_no": {
+                                        "type": "number",
+                                        "example": 1
+                                    },
+                                    "room_id": {
+                                        "type": "number",
+                                        "example": 262
+                                    },
+                                    "room_name": {
+                                        "type": "string",
+                                        "example": "พด.สล."
+                                    },
+                                    "division_id": {
+                                        "type": "number",
+                                        "example": 1796
+                                    },
+                                    "sub_division_id": {
+                                        "type": "number",
+                                        "example": 1801
+                                    },
+                                    "owner_emp_id": {
+                                        "type": "number",
+                                        "example": 15404
+                                    },
+                                    "remarks": {
+                                        "type": "string",
+                                        "example": "ทดสอบ"
+                                    },
+                                    "created_by": {
+                                        "type": "number",
+                                        "example": 111
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "409": {
+                        "description": "Conflict"
+                    },
+                    "422": {
+                        "description": "Unprocessable Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/putCheckHistories/{id}": {
+            "put": {
+                "tags": [
+                    "Check Histories"
+                ],
+                "summary": "PUT: Update Check Inventory History Data by ID",
+                "operationId": "6f736c15dede5c776011ef278b4208cf",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "inv_id": {
+                                        "type": "number",
+                                        "example": 108381
+                                    },
+                                    "inv_sn": {
+                                        "type": "string",
+                                        "example": "วศ.คอ.7110-002-0001/16 2563"
+                                    },
+                                    "inv_name": {
+                                        "type": "string",
+                                        "example": "โต๊ะสำหรับวางคอมพิวเตอร์"
+                                    },
+                                    "fiscal_year": {
+                                        "type": "number",
+                                        "example": 2567
+                                    },
+                                    "dispense_flg": {
+                                        "type": "char",
+                                        "example": "N"
+                                    },
+                                    "building_code": {
+                                        "type": "number",
+                                        "example": 670300
+                                    },
+                                    "building_name": {
+                                        "type": "string",
+                                        "example": "อาคารห้องปฏิบัติการเฉพาะทาง (SAL)"
+                                    },
+                                    "floor_code": {
+                                        "type": "number",
+                                        "example": 670301
+                                    },
+                                    "floor_no": {
+                                        "type": "number",
+                                        "example": 1
+                                    },
+                                    "room_id": {
+                                        "type": "number",
+                                        "example": 262
+                                    },
+                                    "room_name": {
+                                        "type": "string",
+                                        "example": "ห้อง พด.สล."
+                                    },
+                                    "division_id": {
+                                        "type": "number",
+                                        "example": 1796
+                                    },
+                                    "sub_division_id": {
+                                        "type": "number",
+                                        "example": 1801
+                                    },
+                                    "owner_emp_id": {
+                                        "type": "number",
+                                        "example": 15404
+                                    },
+                                    "remarks": {
+                                        "type": "string",
+                                        "example": "ทดสอบ"
+                                    },
+                                    "created_by": {
+                                        "type": "number",
+                                        "example": 111
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "422": {
+                        "description": "Unprocessable Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/deleteCheckHistories/{id}": {
+            "delete": {
+                "tags": [
+                    "Check Histories"
+                ],
+                "summary": "DELETE: Delete Check Inventory History Data by ID",
+                "operationId": "10dfa955dc9761bc44c88b2be1f1cac7",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "422": {
+                        "description": "Unprocessable Content"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Inventories"
+        },
+        {
+            "name": "Locations"
+        },
+        {
+            "name": "Move Histories"
+        },
+        {
+            "name": "Report"
+        },
+        {
+            "name": "Check Histories"
+        }
+    ]
+}

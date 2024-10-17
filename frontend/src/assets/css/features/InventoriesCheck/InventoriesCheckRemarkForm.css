@@ -1,0 +1,9 @@
+/* Form */
+.form-label {
+    margin-right: 15px;
+    font-weight: 500;
+}
+.remark-input {
+    background-color: #fff;
+    margin-bottom: 15px;
+}

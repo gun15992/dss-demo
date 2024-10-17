@@ -1,0 +1,53 @@
+/* Alert */
+.alert-info {
+    margin-top: 40px;
+}
+.alert {
+    margin-bottom: 0 !important;
+}
+
+/* QR Code Scanner */
+.qrcode-scanner {
+    margin-top: 20px;
+    border: 4px solid darkgray;
+    border-radius: 20px;
+    padding: 8px; 
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+.square-scanner {
+    object-fit: cover;
+}
+.qrcode-scanner.success-scan {
+    border-color: green;
+}
+.qrcode-scanner.error-scan {
+    border-color: red;
+}
+
+/* Icon */
+.qrcode-icon-ingroup {
+    margin-right: 8px;
+}
+.check-qr-icon {
+    margin-right: 10px;
+}
+
+/* In-Group */
+.ingroup-qrcode, .ingroup-qrcode-form {
+    cursor: default;
+}
+.input-group-text {
+    background-color: rgb(235, 235, 235);
+}
+@media (max-width: 768px) {
+    .input-group-span-text {
+        display: none;
+    }
+    .qrcode-icon-ingroup {
+        margin-right: 0;
+    }
+}
+.ingroup-qrcode-form:disabled {
+    background-color: #fff;
+}

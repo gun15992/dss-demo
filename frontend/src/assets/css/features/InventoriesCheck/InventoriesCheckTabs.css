@@ -1,0 +1,39 @@
+/* Navitem */
+.tab-item {
+    margin-left: 0 !important;
+}
+
+/* Navlink */
+.tab-text {
+    margin-left: 0 !important;
+}
+@media (max-width: 1419.56px) {
+    .tab-text {
+        display: none;
+    }
+    .tab-link {
+        padding-left: 20px !important; 
+        padding-right: 12px !important; 
+    }
+}
+.check-tab {
+    cursor: default;
+}
+.tab-link {
+    color: #b0b0b0;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.tab-link:hover {
+    color: #000;
+    background-color: lightgray !important;
+}
+.tab-link.active {
+    color: #fff !important;
+    background-color: #292929 !important;
+}
+
+/* Logo */
+.logo-location, .logo-qrcode {
+    margin-right: 8px;
+}

@@ -1,0 +1,73 @@
+/* Search Box */
+.search-box {
+    margin-left: 8px;
+    margin-inline-end: 8px;
+    max-width: 300px;
+}
+
+/* Text */
+.responsive-text-hidden {
+    font-weight: 500;
+}
+.span-text {
+    color: lightgray;
+}
+
+/* Button */
+.download-btn {
+    margin-left: 4px;
+}
+.add-btn {
+    margin: 4px;
+}
+.add-btn:hover {
+    color: #fff;
+}
+.add-btn:active {
+    color: #fff !important;
+}
+.clear-btn:hover,
+.clear-btn:active {
+    color: #fff !important;
+}
+
+/* Pagination & Data Count */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 0;
+}
+.pagination .page-item {
+    margin: 0; 
+}
+.pagination .page-link {
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0; 
+}
+.paginate-datacount {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .pagination {
+        flex-wrap: wrap;
+    }
+    .paginate-datacount {
+        flex-direction: column;
+        align-items: center;
+    }
+    .paginate-datacount .pagination {
+        margin-bottom: 10px;
+    }
+    .datacount {
+        margin-top: 10px;
+    }
+}

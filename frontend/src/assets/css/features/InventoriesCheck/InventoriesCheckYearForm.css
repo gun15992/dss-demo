@@ -1,0 +1,10 @@
+/* Form */
+.form-label {
+    font-weight: 500;
+}
+.year-input:disabled {
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: not-allowed;
+}

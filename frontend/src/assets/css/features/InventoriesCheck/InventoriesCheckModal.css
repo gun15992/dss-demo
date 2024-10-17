@@ -1,0 +1,18 @@
+/* Tags */
+.inventory-detail-tag,
+.check-history-record-tag {
+    cursor: default;
+}
+
+/* Details */
+.paragraph-detail-inventory-sub-last {
+    margin-bottom: 10px;
+}
+.paragraph-detail-inventory-last {
+    margin-bottom: 0;
+}
+
+/* Icons */
+.detail-info-icon {
+    margin-right: 10px;
+}

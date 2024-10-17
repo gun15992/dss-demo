@@ -1,0 +1,122 @@
+/* Text */
+.responsive-text-hidden {
+    font-weight: 500;
+}
+.span-text {
+    color: lightgray;
+}
+
+/* Button */
+.btn-column {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    white-space: nowrap;
+}
+.btn-column .btn {
+    margin: 4px;
+}
+.edit-btn {
+    display: block;
+    margin: 4px;
+}
+.edit-btn:hover {
+    color: #fff;
+}
+.edit-btn:active {
+    color: #fff !important;
+}
+.delete-btn {
+    display: block;
+    margin: 4px;
+}
+.delete-btn:hover {
+    color: #fff;
+}
+.delete-btn:active {
+    color: #fff !important;
+}
+.pdf-btn {
+    display: block;
+    margin: 4px;
+}
+@media (min-width: 768px) {
+    .edit-btn {
+        display: inline-block;
+    }
+    .delete-btn {
+        display: inline-block;
+    }
+    .pdf-btn {
+        display: inline-block;
+    }
+}
+
+/* Inventory Image */
+.image-cropper {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.image-cropper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 4px;
+}
+.image-cropper:hover img {
+    transform: scale(1.5);
+}
+.inv-not-image {
+    color: lightgray;
+}
+
+/* Inventory Name */
+.inv-name {
+    text-decoration: none;
+}
+
+/* None Data */
+.none-data {
+    padding: 17px !important;
+}
+
+/* Table */
+.table-check td, .table-check th {
+    /* white-space: nowrap; */
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+    height: 100%;
+}
+.table-check td {
+    min-height: 80px; 
+}
+@media (max-width: 1277.60px) {
+    .table-check td, .table-check th {
+        white-space: nowrap;
+    }
+    .table-check td {
+        min-height: 60px; 
+    }
+}
+
+/* Icons */
+.icon-check-true {
+    color: green;
+}
+.icon-check-false {
+    color: red;
+}

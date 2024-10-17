@@ -1,0 +1,123 @@
+/* Container */
+.sticker-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; 
+    justify-content: center;
+}
+.qrcode-display {
+    margin-left: auto;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 1277.60px) {
+    .qrcode-display {
+        margin-left: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Icons */
+.logo-display {
+    width: 30%;
+    text-align: center;
+}
+.icon-co-header {
+    margin-right: 12px;
+}
+@media (max-width: 1277.60px) {
+    .logo-display {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+}
+
+/* Icons */
+.icon-header {
+    margin-right: 8px;
+}
+
+/* Datacount */
+.text-datacount {
+    margin-top: 12px;
+}
+@media (max-width: 768px) {
+    .text-datacount {
+        margin-top: 0px;
+    }
+}
+
+/* Stickers */
+.sticker {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    max-width: auto;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-top: 0;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+.sticker:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.sticker-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sticker p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #000;
+}
+.sticker.selected {
+    border-color: darkgreen;
+}
+.sticker-data {
+    font-size: 12px !important;
+}
+.hidden-checkbox {
+    display: none;
+}
+@media (max-width: 1021.11px) {
+    .sticker {
+        width: 100%;
+    }
+    .sticker-body .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sticker-body .info {
+        width: 100%;
+    }
+    .sticker-body .qrcode-display {
+        margin-top: 10px;
+    }
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    justify-content: flex-end;
+}
+.qrcode-list-btn {
+    border-radius: 5px;
+    padding: 10px 15px;
+    --cui-btn-hover-color: #fff;
+    --cui-btn-active-color: #fff;
+    transition: all 0.2s ease-in-out; 
+}
+.btn-shadow {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}

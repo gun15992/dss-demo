@@ -1,0 +1,15 @@
+/* Card */
+.inventory-type-nametag {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.inventory-type-paragraph {
+    margin-bottom: 0;
+}
+.inventory-type-footer {
+    font-size: 14px;
+}
+.text-decoration-none {
+    padding: 7px;
+}

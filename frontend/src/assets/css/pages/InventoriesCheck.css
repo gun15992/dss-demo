@@ -1,0 +1,164 @@
+/* Card */
+.card-title-hidden {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-top: 12px;
+}
+.inventory-check {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+}
+.inventory-check-icon {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.qrcode-card-body {
+    padding: 10px;
+}
+.inventory-check-sub {
+    margin: 25px;
+}
+.inventory-check-sub-title {
+    margin-bottom: 25px;
+}
+.inventory-check-sub-location {
+    margin-bottom: 0;
+}
+.inventory-check-sub-status,
+.inventory-check-sub-serialnumber  {
+    margin-top: 10px;
+}
+.warning-qrcode-mobile {
+    border-color: #d1a400;
+}
+.warning-qrcode-mobile-head {
+    border-color: #d1a400;
+    color: #d1a400;
+    background-color: #fffadc;
+}
+.warning-qrcode-mobile-body {
+    color: #d1a400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* Alert */
+.qrcode-alert {
+    border-color: darkblue;
+    color: darkblue;
+    background-color: #ececff;
+}
+
+/* Content */
+.success-sub-content {
+    border-color: darkblue;
+}
+.search-content {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Inventory Image */
+.image-check-cropper {
+    position: relative;
+    display: block; 
+    width: calc(100% - 40px); 
+    max-width: 150px; 
+    height: auto; 
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 20px auto; 
+    padding: 0; 
+    box-sizing: border-box; 
+    cursor: pointer;
+}
+.image-check-cropper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 4px;
+}
+.image-check-cropper:hover img {
+    transform: scale(1.5);
+}
+.image-check-cropper-none {
+    position: relative;
+    display: block; 
+    width: calc(100% - 40px);
+    max-width: 150px;
+    height: auto; 
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 0; 
+    box-sizing: border-box;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-inv-not-image {
+    width: 100%; 
+    height: auto; 
+    max-width: 150px; 
+    color: lightgray; 
+}
+@media (max-width: 767.20px) {
+    .image-check-cropper {
+        width: calc(100% - 20px); 
+        max-width: none; 
+        height: auto; 
+        margin: 10px auto; 
+    }
+    .image-check-cropper-none {
+        width: calc(100% - 20px); 
+        max-width: none; 
+        margin: 10px auto; 
+    }
+    .check-inv-not-image {
+        max-width: 100%; 
+    }
+}
+
+/* Button */
+.check-btn {
+    margin: 4px;
+}
+.check-disable-btn {
+    border: none;
+}
+.check-btn:hover {
+    color: #fff;
+}
+.check-btn:active {
+    color: #fff !important;
+}
+@media (min-width: 768px) {
+    .edit-btn {
+        display: inline-block;
+    }
+}
+
+/* Tags */
+.qrcode-warning-tag {
+    cursor: default;
+}
+
+/* Icons */
+.qrcode-warning-icon {
+    margin-right: 10px;
+}
+.device-warning-icon {
+    padding: 12px;
+    color: #d1a400;
+}
