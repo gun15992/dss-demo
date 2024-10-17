@@ -20,8 +20,8 @@ import { Searchbox } from '../components/searchbox/Searchbox';
 import { BlueOutlineButton, GrayOutlineButton, DarkOutlineButton, YellowOutlineButton, RedOutlineButton } from '../components/buttons/OutlineButton';
 
 // Import Features
-import InventoriesCheckListDetailModal from '../features/InventoriesCheckList/InventoriesCheckListDetailModal';
 import InventoriesCheckListDataTable from '../features/inventoriesCheckList/InventoriesCheckListDataTable';
+import InventoriesCheckListDetailModal from '../features/inventoriesCheckList/InventoriesCheckListDetailModal';
 import InventoriesCheckListAdvancedSearchDropdown from '../features/inventoriesCheckList/InventoriesCheckListAdvancedSearchDropdown';
 
 // Import Utilities
